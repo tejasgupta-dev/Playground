@@ -1,0 +1,82 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%);
+  transition: transform 0.3s ease-in-out;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Hide/show */
+.navbar.show {
+  transform: translateX(-50%) translateY(0);
+}
+
+.navbar.hide {
+  transform: translateX(-50%) translateY(-100%);
+}
+
+/* Brand absolutely positioned on the left */
+.navbar-brand {
+  position: absolute;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  width: 60%;
+  height: auto;
+}
+
+/* Links centered by giving them full width */
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Tabs */
+.navbar-tab {
+  position: relative;
+  margin: 0 15px;
+  cursor: pointer;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+  color: white;
+  opacity: 0.6;
+    text-decoration: none;   /* kills browser underline */
+  border-bottom: none;     /* kills any leftover underline */
+}
+
+/* Active */
+.navbar-tab.active {
+  opacity: 1;
+}
+
+/* Underline */
+.navbar-tab::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.navbar-tab:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}

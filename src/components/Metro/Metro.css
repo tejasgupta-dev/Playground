@@ -1,0 +1,51 @@
+.metro-metro {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+}
+
+.metro-container {
+  position: relative;
+  flex-shrink: 0;
+  height: 200px;
+  margin-right: 0px;
+}
+
+.container-image {
+  height: 100%;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.magazine-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.magazine-image:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .metro-container {
+    height: 150px;
+  }
+
+  .magazine-image {
+    width: 75%;
+    height: 75%;
+  }
+}
