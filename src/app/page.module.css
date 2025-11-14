@@ -14,7 +14,6 @@
 .title {
   height: 15vw;
   position: fixed;
-
   left: 0;
   width: 100%;
   font-size: 3rem;
@@ -104,6 +103,16 @@
   cursor: pointer;
   border-radius: 2rem;
   margin-bottom: 2rem;
+}
+
+.featuredSection{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.contactSection{
+
 }
 
 /* Responsive design */
