@@ -7,7 +7,7 @@ import Link from "next/link.js";
 export default function Featured({ imgSrc, header, title, paragraph, route }) {
   return (
     <div
-      className={styles.featured}
+      className={styles.section}
       style={{ backgroundImage: `url(${imgSrc})` }}
     >
       <div className={styles.header}>

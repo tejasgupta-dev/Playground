@@ -1,0 +1,50 @@
+.section {
+  width: 100%;
+  overflow-x: hidden;
+  color: #ffb800;
+  padding-left: 3rem;
+}
+
+.header {
+  font-size: 3rem;
+  z-index: 10;
+}
+
+.body {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: auto;
+  width: 50%;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.paragraph {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 50%;
+}
+
+.body img {
+  width: auto;
+  height: 75%;
+  object-fit: contain;
+  border-radius: 5rem;
+}

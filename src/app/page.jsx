@@ -4,6 +4,7 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import FeaturedCarousel from "../components/FeaturedCarousel/FeaturedCarousel";
+import OurServices from "../components/OurServices/OurServices";
 
 export default function Home() {
   const featuredItems = [
@@ -15,20 +16,27 @@ export default function Home() {
       route: "/about-us",
     },
     {
-      imgSrc: "/images/Teddy.png",
+      imgSrc: "/images/featured/Teddy.png",
       header: "OUR SERVICES",
       title: "Table Magazine",
       paragraph: "This is a space to welcome visitors to the site. As the first text readers encounter, this copy should clearly convey what the site is about. Grab their attention with captivating and inviting text, and add an image or video for extra engagement. ",
       route: "/about-us",
     },
     {
-      imgSrc: "/images/LastFirstDay.png",
+      imgSrc: "/images/featured/LastFirstDay.png",
       header: "OUR SERVICES",
       title: "Recent Vlog",
       paragraph: "This is a space to welcome visitors to the site. As the first text readers encounter, this copy should clearly convey what the site is about. Grab their attention with captivating and inviting text, and add an image or video for extra engagement. ",
       route: "/about-us",
     },
   ];
+
+  const services = [
+    { title: "Videography", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." },
+    { title: "Photography", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." },
+    { title: "Photo Editing", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." },
+    { title: "Service Name", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." }
+  ]
 
   return (
     <div className={styles.home}>
@@ -95,6 +103,30 @@ export default function Home() {
 
         <div className={styles.featuredSection}>
           <FeaturedCarousel items={featuredItems} interval={6000} />;
+        </div>
+
+        <div className={styles.servicesSection}>
+          <OurServices imgSrc={"/images/model.png"} header={"Our Services"} services={services}  />;
+        </div>
+
+        <div className={styles.trainSection}>
+
+        </div>
+
+        <div className={styles.clientSection}>
+
+        </div>
+
+        <div className={styles.socialSection}>
+
+        </div>
+
+        <div className={styles.photoSection}>
+
+        </div>
+
+        <div className={styles.contactSection}>
+
         </div>
 
       </div>
