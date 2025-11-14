@@ -109,7 +109,7 @@ export default function Home() {
           <OurServices imgSrc={"/images/model.png"} header={"Our Services"} services={services}  />;
         </div>
 
-        <div className={styles.trainSection}>
+        <div className={styles.metroSection}>
 
         </div>
 
