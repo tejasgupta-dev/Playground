@@ -10,7 +10,7 @@ const MetroContainer = ({ containerIndex, magazineImage, onMagazineClick }) => {
     >
       {/* Base metro compartment image */}
       <img
-        src="/assets/MetroContainer.jpg"
+        src="/images/Metro.png"
         alt={`Metro Container ${containerIndex}`}
         className="container-image"
       />
