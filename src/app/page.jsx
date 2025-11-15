@@ -68,7 +68,7 @@ export default function Home() {
         <div className={styles.videoSection}>
           <video
             className={styles.backgroundVideo}
-            src="/videos/JayWalking.MP4"
+            src="https://mvmuqvd7vshvntkn.public.blob.vercel-storage.com/JayWalking.MP4"
             autoPlay
             muted
             loop
