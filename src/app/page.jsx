@@ -1,7 +1,6 @@
 "use client"
 
 import React from "react";
-import styles from "./page.module.css";
 import Title from "../components/Title/Title";
 import Welcome from "../components/Welcome/Welcome";
 import FeaturedCarousel from "../components/FeaturedCarousel/FeaturedCarousel";
@@ -19,41 +18,23 @@ import {
 
 export default function Home() {
   return (
-    <div className={styles.home}>
+    <div>
       <Title {...title}/>
 
-      <div className={styles.contentSection}>
-        <Welcome {...welcome}/>
+      <Welcome {...welcome}/>
 
-        <div className={styles.featuredSection}>
-          <FeaturedCarousel items={featuredItems} interval={6000} />
-        </div>
+      <FeaturedCarousel items={featuredItems} interval={6000} />
 
-        <div className={styles.servicesSection}>
-          <OurServices imgSrc={"/images/model.png"} header={"Our Services"} services={services} />
-        </div>
+      <OurServices imgSrc={"/images/model.png"} header={"Our Services"} services={services} />
 
-        {/* TODO: fix this section */}
-        <div className={styles.metroSection}>
-          {/* <Metro /> */}
-        </div>
+      {/* <Metro /> */}
 
-        <div className={styles.clientSection}>
-          <TestimonialCarousel items={testimonies}/>
-        </div>
+      <TestimonialCarousel items={testimonies}/>
 
-        <div className={styles.socialSection}>
-          <Socials />
-        </div>
+      <Socials />
 
-        <div className={styles.photoSection}>
-
-        </div>
-
-        <div className={styles.contactSection} data-contact-section>
-
-        </div>
-      </div>
+      <div data-contact-section></div>
+      
     </div>
   );
 }
