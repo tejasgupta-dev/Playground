@@ -1,20 +1,16 @@
-export const title = [
-  {
+export const title = {
     title: "PLAYGROUND MARKETING FIRM",
     imgSrc: "/images/Cross.png",
     videoSrc: "https://mvmuqvd7vshvntkn.public.blob.vercel-storage.com/JayWalking.MP4",
-  }
-]
+}
 
-export const welcome = [
-  {
+export const welcome = {
     title: "Welcone To...",
     highlightedTitle: "The Playground",
     description: "It’s an opportunity to tell the story behind the business or describe a special service or product it offers. You can use this section to share the company's history or highlight a particular feature that sets it apart from competitors.",
     buttonText: "SCHEDULE A CALL",
     buttonLink: "/",
   }
-]
 
 export const featuredItems = [
   {

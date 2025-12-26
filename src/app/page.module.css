@@ -4,42 +4,7 @@
   color: white;
 }
 
-.titleSection {
-  height: 15vw; /* space above video */
-  position: relative;
-  z-index: 1;
-}
-
-/* Fixed title - stays in place but goes BEHIND scrolling content */
-.title {
-  height: 15vw;
-  position: fixed;
-  left: 0;
-  width: 100%;
-  font-size: 3rem;
-  pointer-events: none;
-  font-weight: 100;
-  display: flex;
-  align-items: center;
-  z-index: 1; /* Lower z-index so content scrolls over it */
-}
-
-.title h1 {
-  margin: 0;
-  font-weight: 900;
-  color: #ffb800;
-  text-shadow:
-    3px 3px 0 #ffffff,
-    6px 6px 0 #000000;
-  text-align: left;
-}
-
-.title img{
-  width: 20%;
-  height: auto;
-}
-
-.contentSection{
+.contentSection {
   position: relative;
   overflow-x: hidden;
   background-color: #000000;
@@ -48,88 +13,16 @@
   z-index: 10;
 }
 
-.videoSection {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-}
-
-.backgroundVideo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 2rem;
-}
-
-.welcomeSection {
-  position: relative;
-  color: white;
-  margin-left: 2rem;
-  width: 100%;
-}
-
-.welcomeTop{
-  padding-top: 3rem;
-  font-size: 10rem;
-  line-height: 5rem;
-}
-
-.welcomeBottom {
-  font-size: 10rem;
-  color: #ffb800;
-  line-height: 5rem;
-  padding-bottom: 3rem;
-}
-
-.welcomeSection p{
-  font-size: 1rem;
-  width: 30%;
-  line-height: 1.5rem;
-}
-
-.scheduleButton {
-  margin-top: 1rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem 2rem;
-  font-size: 0.75rem;
-  background-color: #ffb800;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 2rem;
-  margin-bottom: 2rem;
-}
-
-.featuredSection{
+.featuredSection {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
 }
 
-.metroSection{
+.metroSection {
 
 }
 
-.contactSection{
+.contactSection {
 
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  .titleSection {
-    font-size: 2rem;
-  }
-
-  .titleWrapper {
-    height: 100px;
-  }
-
-  .welcomeSection p {
-    font-size: 1.2rem;
-  }
 }

@@ -1,0 +1,46 @@
+.welcomeSection {
+  position: relative;
+  color: white;
+  margin-left: 2rem;
+  width: 100%;
+}
+
+.welcomeTop {
+  padding-top: 3rem;
+  font-size: 10rem;
+  line-height: 5rem;
+}
+
+.welcomeBottom {
+  font-size: 10rem;
+  color: #ffb800;
+  line-height: 5rem;
+  padding-bottom: 3rem;
+}
+
+.welcomeSection p {
+  font-size: 1rem;
+  width: 30%;
+  line-height: 1.5rem;
+}
+
+.scheduleButton {
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  font-size: 0.75rem;
+  background-color: #ffb800;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .welcomeSection p {
+    font-size: 1.2rem;
+  }
+}

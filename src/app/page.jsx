@@ -2,7 +2,8 @@
 
 import React from "react";
 import styles from "./page.module.css";
-import Image from "next/image";
+import Title from "../components/Title/Title";
+import Welcome from "../components/Welcome/Welcome";
 import FeaturedCarousel from "../components/FeaturedCarousel/FeaturedCarousel";
 import OurServices from "../components/OurServices/OurServices";
 import Metro from "../components/Metro/Metro";
@@ -19,73 +20,17 @@ import {
 export default function Home() {
   return (
     <div className={styles.home}>
-
-      <div className={styles.titleSection}>
-        <div className={styles.title}>
-          <h1><strong>PLAYGROUND MARKETING FIRM</strong></h1>
-          <Image 
-            src="/images/Cross.png" 
-            alt="My Photo" 
-            width={400} 
-            height={300} 
-          />
-        </div>
-      </div>
+      <Title {...title}/>
 
       <div className={styles.contentSection}>
-        {/* Video Section */}
-        <div className={styles.videoSection}>
-          <video
-            className={styles.backgroundVideo}
-            src="https://mvmuqvd7vshvntkn.public.blob.vercel-storage.com/JayWalking.MP4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-        </div>
-
-        {/* Welcome Section */}
-        <div className={styles.welcomeSection}>
-          <h1 className={styles.welcomeTop}><i>Welcome To...</i></h1>
-          <h1 className={styles.welcomeBottom}>The Playground</h1>
-          <div className={styles.welcomeDescription}>
-            <p>
-              It’s an opportunity to tell the story behind the business or describe a special 
-              service or product it offers. You can use this section to share the company's history or 
-              highlight a particular feature that sets it apart from competitors.
-            </p>
-            <button 
-              className={styles.scheduleButton}
-              onClick={() => {
-                const element = document.querySelector(`.${styles.contactSection}`);
-                element?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              SCHEDULE A CALL
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                width="1rem"
-                height="1rem"
-              >
-                <path d="M5 12h14M13 5l7 7-7 7" />
-              </svg>
-            </button>
-          </div>
-        </div>
+        <Welcome {...welcome}/>
 
         <div className={styles.featuredSection}>
-          <FeaturedCarousel items={featuredItems} interval={6000} />;
+          <FeaturedCarousel items={featuredItems} interval={6000} />
         </div>
 
         <div className={styles.servicesSection}>
-          <OurServices imgSrc={"/images/model.png"} header={"Our Services"} services={services}  />
+          <OurServices imgSrc={"/images/model.png"} header={"Our Services"} services={services} />
         </div>
 
         {/* TODO: fix this section */}
@@ -105,10 +50,9 @@ export default function Home() {
 
         </div>
 
-        <div className={styles.contactSection}>
+        <div className={styles.contactSection} data-contact-section>
 
         </div>
-
       </div>
     </div>
   );
