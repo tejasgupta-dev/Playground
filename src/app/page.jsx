@@ -7,47 +7,16 @@ import FeaturedCarousel from "../components/FeaturedCarousel/FeaturedCarousel";
 import OurServices from "../components/OurServices/OurServices";
 import Metro from "../components/Metro/Metro";
 import TestimonialCarousel from "../components/TestimonialCaraousel/TestimonialCarousel";
-import Footer from "../components/Footer/Footer";
 import Socials from "../components/Socials/Socials";
+import {
+  title,
+  welcome,
+  featuredItems,
+  services,
+  testimonies,
+} from "../content/home"
 
 export default function Home() {
-  const featuredItems = [
-    {
-      imgSrc: "/images/featured/TheCollegeClub.png",
-      header: "LATEST PROJECTS",
-      title: "The College Club",
-      paragraph: "This is a space to welcome visitors to the site. As the first text readers encounter, this copy should clearly convey what the site is about. Grab their attention with captivating and inviting text, and add an image or video for extra engagement.",
-      route: "/about-us",
-    },
-    {
-      imgSrc: "/images/featured/Teddy.png",
-      header: "OUR SERVICES",
-      title: "Table Magazine",
-      paragraph: "This is a space to welcome visitors to the site. As the first text readers encounter, this copy should clearly convey what the site is about. Grab their attention with captivating and inviting text, and add an image or video for extra engagement. ",
-      route: "/about-us",
-    },
-    {
-      imgSrc: "/images/featured/LastFirstDay.png",
-      header: "OUR SERVICES",
-      title: "Recent Vlog",
-      paragraph: "This is a space to welcome visitors to the site. As the first text readers encounter, this copy should clearly convey what the site is about. Grab their attention with captivating and inviting text, and add an image or video for extra engagement. ",
-      route: "/about-us",
-    },
-  ];
-
-  const services = [
-    { title: "Videography", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." },
-    { title: "Photography", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." },
-    { title: "Photo Editing", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." },
-    { title: "Service Name", paragraph: "This is the space to introduce the Services section. Briefly describe the types of services offered and highlight any special benefits or features." },
-  ]
-
-  const testimonies = [
-    {imgSrc: "/images/Logo.png", statement: "“This is the space to share a review from one of the business's clients or customers.”", source: "JAMES SAHLEW, MN"},
-    {imgSrc: "/images/Logo.png", statement: "“Use this space to share a testimonial quote about the business, its products or its services. Insert a quote from a real customer or client here to build trust and win over site visitors.”", source: "HALIT KEIGAD, FL"},
-    {imgSrc: "/images/Logo.png", statement: "“This is the space to share a review from one of the business's clients or customers.”", source: "MOIZ RUDENS, CA"},
-  ]
-
   return (
     <div className={styles.home}>
 
@@ -119,7 +88,7 @@ export default function Home() {
           <OurServices imgSrc={"/images/model.png"} header={"Our Services"} services={services}  />
         </div>
 
-        {/* TODO: fix this ection */}
+        {/* TODO: fix this section */}
         <div className={styles.metroSection}>
           {/* <Metro /> */}
         </div>
@@ -141,8 +110,6 @@ export default function Home() {
         </div>
 
       </div>
-
-      <Footer imgSrc="/images/Logo.png" />
     </div>
   );
 }
